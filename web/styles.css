@@ -1,0 +1,103 @@
+:root {
+	--body-color: lightpink;	
+	--text-decoration-color: black;
+	--main-font: Papyrus, fantasy, Copperplate; 
+	--main-font-weight: bold;
+}
+
+body {
+	background-color: var(--body-color);
+	background: linear-gradient(to bottom, var(--body-color), 
+								rgba(26,246,252, 1));
+}
+#me {
+	height: 150px;
+	width: 150px;
+	border-radius: 150px;
+	border: 1px solid rgb(237,154,255);
+	object-fit: cover;
+	float: left;
+	margin-right: 10px;
+}
+
+#uclogo {
+	height: 250px;
+	width: 250px;
+	border: 1px solid rgb(237,154,255);
+	object-fit: cover;
+	float: center;
+	margin-right: 10px;
+}
+#header {
+	color: red;
+}
+
+main { 
+	display: grid; 
+	margin: 20px;
+	grid-template-rows:	repeat(10, 1fr);
+	grid-template-columns: repeat(20, 1fr);
+	justify-content: center;
+	align-content: center;  
+	gap: 30px 15px; 
+}
+
+.secTag {
+	position: relative;
+	color: white;
+	font-family: var(--main-font); 
+	font-size: 150%;
+}
+.sec1 {
+	text-align: left;
+	grid-area: 1/2/4/20;
+	padding: 30px;
+	background-color: orange; 
+	border-style: groove;
+}
+.sec2 {
+	position: relative;
+	text-align: center;
+	grid-area: 5/4/8/10;
+	background-image: url('../media/uclogo.png');
+	background-size: 100% 100%;
+	background-color: navy;
+}
+.sec3 {
+	position: relative;
+	text-align: center;
+	grid-area: 5/12/8/18;
+	background-color: purple;
+}
+.sec4 {
+	position: relative;
+	text-align: center;
+	grid-area: 9/4/12/10;
+	background-color: brown;
+}
+.sec5 {
+	position: relative;
+	text-align: center;
+	grid-area: 9/12/12/18;
+	background-color: lightgreen;
+}
+
+.moreBtn {
+	position: absolute;
+	left: 65px;
+	bottom: 20px;
+	width: 125px;
+	height: 25px;
+	background-color: yellow;
+	font-family: var(--main-font);
+	font-weight: var(--main-font-weight);
+	border-radius: 5px;
+}
+footer {
+	display: grid;
+	padding: 15px;
+	background-color: white;
+	place-items: center;
+}
+
+
